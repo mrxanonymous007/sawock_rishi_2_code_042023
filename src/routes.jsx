@@ -6,7 +6,7 @@ import Rental from "./pages/Rental/rental.jsx";
 import About from './pages/About/about.jsx';
 import Error from './pages/Error/error.jsx';
 
-export const RouteFile = (
+const RoutesFile = (
     <React.Fragment>
         <Route path="/" element={<Home />} />
         <Route path="/rental/:id" element={<Rental />} />
@@ -15,3 +15,4 @@ export const RouteFile = (
     </React.Fragment>
 );
 
+export default RoutesFile;
