@@ -15,8 +15,8 @@ function App() {
         <Routes>
           {RoutesFile}
         </Routes>
+        <Footer />
       </div>
-      <Footer />
     </React.StrictMode>
   );
 }
