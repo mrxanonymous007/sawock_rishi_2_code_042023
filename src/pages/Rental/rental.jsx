@@ -37,17 +37,15 @@ function Rental() {
                 pictures={pictures}
             />
 
-            <div className="lodgings_infos">
-                <Rentals
-                    key={key}
-                    product={product}
-                    title={title}
-                    location={location}
-                    tags={tags}
-                    host={host}
-                    rating={rating}
-                />
-            </div>
+            <Rentals
+                key={key}
+                product={product}
+                title={title}
+                location={location}
+                tags={tags}
+                host={host}
+                rating={rating}
+            />
 
             <div className="rental_collapse">
 
