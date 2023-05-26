@@ -60,7 +60,7 @@ function Rental() {
 
                 <div className="collapse_equipments">
                     <Collapse
-                        title="Equipements"
+                        title="Équipements"
                         texte={equipments.map((equipment, list) => (
                             <li key={list} className="list_equipments">{equipment}</li>
                         ))}
