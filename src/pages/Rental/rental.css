@@ -1,0 +1,67 @@
+.rental_container {
+    margin: 30px 70px;
+}
+
+.rental_collapse {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    max-width: 100%;
+}
+
+.list_equipments {
+    list-style: none;
+}
+
+.collapse_description {
+    display: flex;
+    width: 50%;
+}
+
+.collapse_equipments {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+/*FORMAT TABLETTE*/
+@media screen and (max-width: 980px) {
+    .rental_container {
+        margin: 30px 20px;
+    }
+
+    .rental_collapse {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .collapse_description {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .collapse_equipments {
+        width: 100%;
+    }
+}
+
+/*FORMAT MOBILE*/
+@media screen and (max-width: 480px) {
+    .rental_container {
+        margin: 20px 20px;
+    }
+
+    .rental_collapse {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .collapse_description {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .collapse_equipments {
+        width: 100%;
+    }
+}

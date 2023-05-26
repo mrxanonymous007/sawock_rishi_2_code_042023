@@ -1,0 +1,17 @@
+.home {
+    margin: 30px 70px;
+}
+
+/*FORMAT TABLETTE*/
+@media screen and (max-width: 980px) {
+    .home {
+        margin: 30px 20px;
+    }
+}
+
+/*FORMAT MOBILE*/
+@media screen and (max-width: 480px) {
+    .home {
+        margin: 0px;
+    }
+}
