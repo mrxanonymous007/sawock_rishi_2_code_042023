@@ -1,6 +1,10 @@
+//importation d'une image
 import logo_kasa_footer from '../../assets/logo_kasa_footer.svg';
+
+//importation de CSS
 import './footer.css';
 
+//composant footer créé
 function Footer() {
     return (
         <footer className="footer">

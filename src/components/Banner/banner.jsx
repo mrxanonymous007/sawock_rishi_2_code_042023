@@ -1,8 +1,10 @@
+//importation d'image
 import home_banner from '../../assets/home_banner.jpg';
 
+//importation du CSS
 import './banner.css';
 
-// Composant Banner
+//composant banner créé
 function Banner() {
     return (
         <div className="banner">

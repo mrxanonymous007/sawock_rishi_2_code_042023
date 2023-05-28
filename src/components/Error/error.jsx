@@ -1,6 +1,10 @@
+//importation d'un composante de react-router
 import { Link } from 'react-router-dom';
+
+//importation du CSS
 import './error.css';
 
+//composant error404 créé
 function Error404() {
     return (
         <div className="error">

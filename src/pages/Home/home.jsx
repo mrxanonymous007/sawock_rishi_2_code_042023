@@ -1,5 +1,8 @@
+//importation des composants
 import Banner from '../../components/Banner/banner';
 import Card from '../../components/Card/card';
+
+//importation du CSS
 import './home.css';
 
 function Home() {

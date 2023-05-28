@@ -1,20 +1,25 @@
+//importation de hook depuis react-router
 import { useParams } from 'react-router-dom';
 
+//importation du fichier json
 import RentalDetails from "../../data/rentals.json";
 
+//importation des composants réutilisés
 import Error404 from '../../components/Error/error';
 import Rentals from '../../components/Rentals/rentals';
 import Slideshow from '../../components/Slideshow/slideshow';
 import Collapse from '../../components/Collapse/collapse';
 
+//importation du CSS
 import './rental.css';
 
 function Rental() {
     const params = useParams();
 
-    //Va chercher le logement correspondant à cette id sinon page erreur
+    //Va chercher le logement correspondant "strictement" à son id
     const product =
         RentalDetails.find((product) => params.id === product.id);
+    //renvoi de la page error si aucun id correspond
     if (product === undefined) {
         return <Error404 />;
     }

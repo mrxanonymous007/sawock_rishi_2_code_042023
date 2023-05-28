@@ -1,9 +1,13 @@
+//importation de composant depuis react-router
 import { Link, NavLink } from "react-router-dom";
 
+//importation d'image
 import logo_kasa_header from '../../assets/logo_kasa_header.svg';
 
+//importation du CSS
 import './header.css';
 
+//composant header
 function Header() {
     return (
         <header className="header">
