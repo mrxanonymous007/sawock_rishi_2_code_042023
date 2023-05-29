@@ -24,6 +24,7 @@ function Rental() {
         return <Error404 />;
     }
 
+    //déclaration des variables
     const key = product.id;
     const pictures = product.pictures;
     const title = product.title;
@@ -36,15 +37,15 @@ function Rental() {
 
     return (
         <section className="rental_container">
-            <div className="lodging_images">
-                <Slideshow
+            <div className="slideshow_images">
+                <Slideshow //composant slideshow
                     key={key}
                     pictures={pictures}
                 />
             </div>
 
-            <div className="lodgings_infos">
-                <Rentals
+            <div className="slideshow_infos">
+                <Rentals //composante rentals
                     key={key}
                     product={product}
                     title={title}
@@ -58,14 +59,14 @@ function Rental() {
             <div className="rental_collapse">
 
                 <div className="collapse_description">
-                    <Collapse
+                    <Collapse //composant collapse
                         title="Description"
                         texte={description}
                     />
                 </div>
 
                 <div className="collapse_equipments">
-                    <Collapse
+                    <Collapse //composant collapse
                         title="Équipements"
                         texte={equipments.map((equipment, list) => (
                             <li key={list} className="list_equipments">{equipment}</li>
